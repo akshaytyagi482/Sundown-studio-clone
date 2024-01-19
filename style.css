@@ -451,7 +451,7 @@ nav{
 #custom-c{
     height: 90px;
     width: 90px;
-    position: fixed;
+    position: absolute;
     background-color: rgb(255, 115, 0);
     border-radius: 50%;
     z-index: 99;
@@ -459,6 +459,7 @@ nav{
     color: white;
     display: none;
     cursor: none;
+    pointer-events: none;
 }
 #custom-c h5{
     margin: 0 1vw;

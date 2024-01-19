@@ -33,19 +33,22 @@ function sliderprop(){
       });
 }
 
-    // let pointer = document.querySelector("#custom-c")
-    // let swip = document.querySelector(".swiper-wrapper")
-    // swip.addEventListener("mouseenter", (event) => {
-    //         pointer.style.display = "block";
-    // })
-    // swip.addEventListener("mouseleave", (event) => {
-    //     pointer.style.display = "none";
-    //  })
-    //  swip.addEventListener("mousemove",(evt) => {
-    //     let x = evt.clientX - 45;
-    //     let y = evt.clientY - 45;
-    //        pointer.style.left = `${x}px`
-    //        pointer.style.top = `${y}px`
-    //  })
+let pointer = document.querySelector("#custom-c");
+let swip = document.querySelector(".swiper-wrapper");
+
+swip.addEventListener("mouseenter", (event) => {
+    pointer.style.display = "block";
+});
+
+swip.addEventListener("mouseleave", (event) => {
+    pointer.style.display = "none";
+});
+
+     swip.addEventListener("mousemove",(evt) => {
+        let x = evt.clientX - 45;
+        let y = evt.clientY - 45;
+        pointer.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+
+     })
 sliderprop()
 imggenerator()
